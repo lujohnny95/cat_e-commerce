@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import catData from './catData';
 import './App.css';
+import Card from "./components/Card";
+import Navbar from './components/Navbar';
 
-function App() {
+const createCard = (catData) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Card 
+      key={catData.id}
+      img={catData.imgURL}
+      age={catData.age}
+      price={catData.price}
+    />
+  )
+}
+
+const App = () => {
+  return(
+    <div>
+      <Navbar />
+      <div className="wrapper">
+        {catData.map(createCard)}
+    
+      </div>
     </div>
-  );
+    
+  )
 }
 
 export default App;
