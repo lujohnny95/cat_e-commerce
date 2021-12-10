@@ -1,31 +1,26 @@
 import React, { useState } from 'react';
-import catData from './catData';
 import './App.css';
-import Card from "./components/Card";
-import Navbar from './components/Navbar';
-
-const createCard = (catData) => {
-  return (
-    <Card 
-      key={catData.id}
-      img={catData.imgURL}
-      age={catData.age}
-      price={catData.price}
-    />
-  )
-}
+import Home from './Home';
+import Basket2 from './components/Basket2';
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+//import Navbar from './components/Navbar';
+import Header from './components/Header';
 
 const App = () => {
   return(
-    <div>
-      <Navbar />
-      <div className="wrapper">
-        {catData.map(createCard)}
-    
-      </div>
-    </div>
-    
-  )
+    <Router>
+      <>
+      <Header />
+      <Switch>
+        <Route path="/Basket2">
+          <Basket2 />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+      </>
+    </Router>    
+  );
 }
-
 export default App;

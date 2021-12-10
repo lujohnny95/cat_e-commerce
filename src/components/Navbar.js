@@ -1,14 +1,18 @@
 import React from 'react';
-
+import basket from '../images/basket.png';
+;
 export default function Navbar() {
   let price = 0;
   return (
-    <div class="topnav">
-      <a class="active">Cats4Lyf.co.uk</a>
-      <a href="#" class="right">
-        <img class="basket_img" src="/images/basket.png"></img>
-        {price}
-      </a>
-    </div>
+    <nav class="navbar">
+      <p class="navPcenter">
+        <h1>Cats4Lyf</h1>
+      </p>
+      <p>
+        <a href="#">
+          <img src="/images/basket.png" class="logo" alt="logo" />£{price}
+        </a>
+      </p>
+    </nav>
   );
 }
