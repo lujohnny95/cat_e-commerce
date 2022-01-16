@@ -1,176 +1,170 @@
 body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin: 1rem;
-  background: wheat;
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
-  gap: 2rem;
-  justify-content: center;
-}
-
-.card {
-  overflow: hidden;
-  box-shadow: 0 2px 20px grey;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-  transition:transform 200ms ease-in;
-  background-color: rgb(240, 234, 192);
-
-}
-
-.card-img{
-  height: 12rem;
-  width: 100%;
-  object-fit: cover;
-}
-
-.card-text {
-  padding: 1rem;
-}
-
-.card-btn {
-  padding: 1rem;
-  font-family: inherit;
-  font-weight: bold;
-  font-size: 1rem;
-  border: 2px solid orangered;
-  background: transparent;
-  color: orangered;
-  border-radius: 5px;
-  cursor: pointer;
-  transition:background 200ms ease-in, color 200ms ease-in;
-}
-
-.card:hover{
-  transform:scale(1.02);
-}
-
-.card:hover .card-btn{
-  background: orangered;
-  color:white;
-}
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin: 1rem;
-  background: wheat;
-}
-
-.wrapper {
-  margin-top: 40px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
-  gap: 2rem;
-  justify-content: center;
-}
-
-.card {
-  overflow: hidden;
-  box-shadow: 0 2px 20px grey;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-  transition: transform 200ms ease-in;
-  background-color: rgb(240, 234, 192);
-}
-
-.card-img {
-  height: 12rem;
-  width: 100%;
-  object-fit: cover;
-}
-
-.card-text {
-  padding: 1rem;
-}
-
-.card-btn {
-  padding: 1rem;
-  font-family: inherit;
-  font-weight: bold;
-  font-size: 1rem;
-  border: 2px solid orangered;
-  background: transparent;
-  color: orangered;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 200ms ease-in, color 200ms ease-in;
-}
-
-.card:hover {
-  transform: scale(1.02);
-}
-
-.card:hover .card-btn {
-  background: orangered;
-  color: white;
-}
-
-/* nav bar */
-.navbar {
-  box-shadow: 0 2px 20px grey;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  background-color: #e7cb6f;
-  top: 0;
-  width: 100%;
-  height: 73px;
-  border-bottom: #f3f5fa solid 1px;
-}
-.navbar:hover {
-  background-color: #de834d;
-}
-.navbar a:hover {
-  color: rgb(240, 234, 192);
-}
-
-.navbar p {
-  display: block;
-  color: #241b23;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 21px;
-}
-.navbar p a {
-  color: #030303;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 21px;
-}
-.navbar p a img.logo {
-  margin-left: 100px;
-}
-
-.navbar p h1 {
-  margin-left: 250px;
-  color: #030303;
-  text-align: center;
-  padding: 10px;
-  text-decoration: none;
-  font-size: 30px;
-}
-.navbar p h1:hover {
-  transform: scale(1.1);
-}
-.logo {
-  width: 50px;
-  height: 50px;
-}
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    background: wheat;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: orangered;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .card {
+    overflow: hidden;
+    box-shadow: 0 2px 20px grey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+    background-color: rgb(240, 234, 192);
+  }
+  
+  .card-img {
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .card-text {
+    padding: 1rem;
+  }
+  
+  .card-btn {
+    padding: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 2px solid orangered;
+    background: transparent;
+    color: orangered;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 200ms ease-in, color 200ms ease-in;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .card:hover .card-btn {
+    background: orangered;
+    color: white;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin: 1rem;
+    background: wheat;
+  }
+  
+  .wrapper {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .card {
+    overflow: hidden;
+    box-shadow: 0 2px 20px grey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+    background-color: rgb(240, 234, 192);
+  }
+  
+  .card-img {
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .card-text {
+    padding: 0.5rem;
+  }
+  
+  .card-btn {
+    padding: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 2px solid orangered;
+    background: transparent;
+    color: orangered;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 200ms ease-in, color 200ms ease-in;
+  }
+  
+  .clear-btn {
+    position: absolute;
+    left: 30%;
+    padding: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 2px solid orangered;
+    color: orangered;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cart-info {
+    position: relative;
+    justify-content: center;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .card:hover .card-btn {
+    background: orangered;
+    color: white;
+  }
+  
+  .topnav {
+    background-color: orangered;
+    height: 80px;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 0px 5px grey;
+    z-index: 10;
+  }
+  
+  .topnav .nav-btn {
+    float: right;
+    padding: 12px 14px;
+    border-radius: 5px;
+    right: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+  }
+  
